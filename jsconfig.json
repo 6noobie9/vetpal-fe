@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "assets/*": ["assets/*"],
+        "components/*": ["components/*"],
+        "constants/*": ["constants/*"],
+        "helpers/*": ["helpers/*"],
+        "hooks/*": ["hooks/*"],
+        "modules/*": ["modules/*"],
+        "*": ["*"]
+      },
+      "jsx": "react",
+      "module": "commonjs",
+      "target": "es6",
+      "esModuleInterop": true
+    },
+    "include": ["src/**/*"]
+  }
+  
