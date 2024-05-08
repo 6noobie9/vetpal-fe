@@ -1,19 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Dashboard from 'modules/dashboard/pages/Dashboard';
 import { ChakraProvider } from '@chakra-ui/react';
+import Login from 'modules/authentication/pages/Login';
+import RecordEntry from 'modules/record-entry/pages/RecordEntry';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <Login />,
   },
   {
     path: '/dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: '/new-record',
+    element: <RecordEntry />,
   },
 ]);
 

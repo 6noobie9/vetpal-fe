@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import PatientRecordItem from './PatientRecordItem';
 
 const PatientRecords = () => {
-  const [patientRecords, setPatientRecords] = useState();
+  const [patientRecords, setPatientRecords] = useState([]);
 
   useEffect(() => {
     const fetchRecords = async () => {
@@ -25,7 +25,9 @@ const PatientRecords = () => {
       <VStack>
         <HStack width="100%" justify="space-between">
           <Text variant="body">Patient Records</Text>
-          <Button variant="link">See All</Button>
+          <Button variant="link" color="green" fontWeight="700">
+            See All
+          </Button>
         </HStack>
         <VStack width="100%">
           {patientRecords.map((record) => (
