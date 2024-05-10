@@ -1,6 +1,6 @@
+import React from 'react';
 import { Input, Select, Text, VStack } from '@chakra-ui/react';
 import AppLayout from 'components/app-layout/AppLayout';
-import React from 'react';
 import BottomButtons from 'components/bottom-buttons/BottomButtons';
 
 const RecordEntry = () => {
@@ -10,9 +10,8 @@ const RecordEntry = () => {
         <VStack width="100%" gap="36px">
           <VStack width="100%" align="flex-start" gap="8px">
             <Text fontWeight="700">Name/ID</Text>
-            <Input type="text" placeholder="Name/ID of Animal"></Input>
+            <Input type="text" placeholder="Name/ID of Animal" />
           </VStack>
-
           <VStack width="100%" align="flex-start" gap="8px">
             <Text fontWeight="700">Select Animal Type</Text>
             <Select placeholder="Select Type of Animal">
@@ -21,7 +20,6 @@ const RecordEntry = () => {
               <option value="Bhalu">Bhalu</option>
             </Select>
           </VStack>
-
           <VStack width="100%" align="flex-start" gap="8px">
             <Text fontWeight="700">Select Animal Type</Text>
             <Select placeholder="Select Breed of Animal">
@@ -31,7 +29,7 @@ const RecordEntry = () => {
             </Select>
           </VStack>
         </VStack>
-        <BottomButtons />
+        <BottomButtons onNext="/disease-entry" onBack="/dashboard" />
       </VStack>
     </AppLayout>
   );
